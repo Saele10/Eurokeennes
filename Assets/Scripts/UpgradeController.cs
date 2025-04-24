@@ -3,37 +3,49 @@ using UnityEngine;
 public class UpgradeController : MonoBehaviour
 {
     [SerializeField] private UpgradeData data;
-    [SerializeField] private GameObject moneyController;
+    [SerializeField] private MoneyController _moneyController;
+
+    [SerializeField] private PersonneController _personneController;
+
 
     [SerializeField] private int _id;
-    private string name;
+    //private string name;
 
 
 
     private void Start()
     {
-        moneyController = GameObject.Find("MoneyController");
         data = DatabaseManager.Instance.GetDataUpgrade(_id);
-
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+
+        if (Input.GetKeyDown(KeyCode.E))
         {
             BuyUpgrade();
         }
+
     }
 
-    public void BuyUpgrade()
+    private void BuyUpgrade()
     {
         if (data.bought)
-            return;
-        var money = moneyController.GetComponent<MoneyController>();
-        if (money._money >= data.cost)
+            Debug.Log("déjà acheté");
+
+
+        else if (_moneyController._money >= data.cost) // si on a assez d'argent...
         {
-            money._money -= data.cost;
+            _moneyController._money -= data.cost;
+            _personneController.nbPerso += data.persoGain;
             data.bought = true;
         }
+
+        else
+        {
+            Debug.Log("pas assez d'argent");
+        }
+
     }
+
 }

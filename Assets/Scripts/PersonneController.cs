@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PersonneController : MonoBehaviour
@@ -23,4 +24,7 @@ public class PersonneController : MonoBehaviour
     {
         nbPerso += amount;
     }
+
+
+
 }

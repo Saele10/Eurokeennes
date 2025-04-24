@@ -8,10 +8,16 @@ public class MoneyController : MonoBehaviour
 
     private float _countdown = 1f;
     
-    private readonly PersonneController _personneController;
+    [SerializeField] private PersonneController _personneController;
+
+ 
 
     private void Update()
     {
+        _moneyPerSecond = (int)Mathf.Round(_personneController.nbPerso / 10);
+        //ajout money par seconde en fonction du nombre de personne 10 = 1€
+
+
         if (_countdown <= 0)
         {
             AddMoney(_moneyPerSecond);
@@ -21,7 +27,7 @@ public class MoneyController : MonoBehaviour
             _countdown -= Time.deltaTime;
 
 
-        _moneyPerSecond = (int) Mathf.Round(_personneController.nbPerso / 10);
+        
     }
 
 

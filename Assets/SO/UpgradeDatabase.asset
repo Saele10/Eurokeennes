@@ -16,4 +16,5 @@ MonoBehaviour:
   - name: Rampe
     cost: 50
     persoGain: 5
-    bought: 1
+    bought: 0
+    physic: 0
