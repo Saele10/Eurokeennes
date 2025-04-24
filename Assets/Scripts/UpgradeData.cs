@@ -9,5 +9,7 @@ public struct UpgradeData
     public int cost;
     public int persoGain;
     public bool bought;
+
+    public bool physic;
 }
 

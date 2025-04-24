@@ -6,6 +6,7 @@ public class UpgradeController : MonoBehaviour
     [SerializeField] private GameObject moneyController;
 
     [SerializeField] private int _id;
+    private string name;
 
 
 
@@ -16,6 +17,13 @@ public class UpgradeController : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            BuyUpgrade();
+        }
+    }
 
     public void BuyUpgrade()
     {

@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MoneyController : MonoBehaviour
@@ -6,7 +7,8 @@ public class MoneyController : MonoBehaviour
     public int _moneyPerSecond = 1;
 
     private float _countdown = 1f;
-
+    
+    private readonly PersonneController _personneController;
 
     private void Update()
     {
@@ -17,6 +19,9 @@ public class MoneyController : MonoBehaviour
         }
         else
             _countdown -= Time.deltaTime;
+
+
+        _moneyPerSecond = (int) Mathf.Round(_personneController.nbPerso / 10);
     }
 
 
