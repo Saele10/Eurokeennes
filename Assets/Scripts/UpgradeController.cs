@@ -33,7 +33,7 @@ public class UpgradeController : MonoBehaviour
 
     }
 
-    private void BuyUpgrade()
+    public void BuyUpgrade()
     {
         if (data.bought)
             Debug.Log("déjà acheté");
