@@ -4,6 +4,7 @@ public class UpgradeController : MonoBehaviour
 {
     [SerializeField] private UpgradeData data;
     [SerializeField] private MoneyController _moneyController;
+    [SerializeField] private SpriteRenderer _spriteRenderer;
 
     [SerializeField] private PersonneController _personneController;
 
@@ -16,6 +17,8 @@ public class UpgradeController : MonoBehaviour
     private void Start()
     {
         data = DatabaseManager.Instance.GetDataUpgrade(_id);
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _spriteRenderer.color = Color.clear;
     }
 
     private void Update()
@@ -25,6 +28,8 @@ public class UpgradeController : MonoBehaviour
         {
             BuyUpgrade();
         }
+
+
 
     }
 
@@ -39,6 +44,8 @@ public class UpgradeController : MonoBehaviour
             _moneyController._money -= data.cost;
             _personneController.nbPerso += data.persoGain;
             data.bought = true;
+            _spriteRenderer.color = Color.white;
+
         }
 
         else
