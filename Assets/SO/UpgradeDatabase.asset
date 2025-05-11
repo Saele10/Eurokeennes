@@ -22,7 +22,7 @@ MonoBehaviour:
     cost: 100
     persoGain: 20
     bought: 0
-    physic: 0
+    physic: 1
   - name: Places accompagnateurs
     cost: 250
     persoGain: 20
