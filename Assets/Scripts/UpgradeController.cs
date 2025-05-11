@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class UpgradeController : MonoBehaviour
@@ -7,6 +8,7 @@ public class UpgradeController : MonoBehaviour
     [SerializeField] private SpriteRenderer _spriteRenderer;
 
     [SerializeField] private PersonneController _personneController;
+    [SerializeField] private List<PublicController> _publicController = new();
 
 
     [SerializeField] private int _id;
@@ -45,6 +47,8 @@ public class UpgradeController : MonoBehaviour
             _personneController.nbPerso += data.persoGain;
             data.bought = true;
             _spriteRenderer.color = Color.white;
+            foreach (var publicController in _publicController)
+                    publicController.bought = true;
 
         }
 
