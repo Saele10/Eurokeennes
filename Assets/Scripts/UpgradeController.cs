@@ -10,6 +10,7 @@ public class UpgradeController : MonoBehaviour
     [SerializeField] private PersonneController _personneController;
     [SerializeField] private List<PublicController> _publicController = new();
     [SerializeField] private List<GameObject> _visuals = new();
+    [SerializeField] private GameObject _menu;
 
 
     [SerializeField] private int _id;
@@ -52,6 +53,7 @@ public class UpgradeController : MonoBehaviour
                     publicController.bought = true;
             foreach (var visual in _visuals)
                 visual.SetActive(true);
+            _menu.SetActive(false);
 
         }
 
