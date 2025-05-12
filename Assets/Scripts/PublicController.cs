@@ -11,7 +11,6 @@ public class PublicController : MonoBehaviour
         Casque
     }
     [field: SerializeField] public TYPE Type { get; private set; }
-    [SerializeField] private List<GameObject> _perso = new List<GameObject>();
 
     private SpriteRenderer _sprite;
     public bool bought = false;

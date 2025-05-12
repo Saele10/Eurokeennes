@@ -9,6 +9,7 @@ public class UpgradeController : MonoBehaviour
 
     [SerializeField] private PersonneController _personneController;
     [SerializeField] private List<PublicController> _publicController = new();
+    [SerializeField] private List<GameObject> _visuals = new();
 
 
     [SerializeField] private int _id;
@@ -49,6 +50,8 @@ public class UpgradeController : MonoBehaviour
             _spriteRenderer.color = Color.white;
             foreach (var publicController in _publicController)
                     publicController.bought = true;
+            foreach (var visual in _visuals)
+                visual.SetActive(true);
 
         }
 
