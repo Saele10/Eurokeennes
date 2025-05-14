@@ -1,5 +1,7 @@
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MoneyController : MonoBehaviour
 {
@@ -9,8 +11,9 @@ public class MoneyController : MonoBehaviour
     private float _countdown = 1f;
     
     [SerializeField] private PersonneController _personneController;
+    [SerializeField] private TextMeshProUGUI _compteur;
 
- 
+
 
     private void Update()
     {
@@ -21,6 +24,7 @@ public class MoneyController : MonoBehaviour
         if (_countdown <= 0)
         {
             AddMoney(_moneyPerSecond);
+            _compteur.text = _money.ToString();
             _countdown = 1f;
         }
         else
