@@ -18,38 +18,46 @@ MonoBehaviour:
     persoGain: 5
     bought: 0
     physic: 1
+    constraint: 0
   - name: Parking
     cost: 100
     persoGain: 20
     bought: 0
     physic: 1
+    constraint: 0
   - name: Places accompagnateurs
     cost: 250
     persoGain: 20
     bought: 0
     physic: 1
+    constraint: 100
   - name: Mousse Protect
     cost: 350
     persoGain: 0
     bought: 0
     physic: 1
+    constraint: 250
   - name: "Boucle Magn\xE9tique"
     cost: 500
     persoGain: 50
     bought: 0
     physic: 1
+    constraint: 500
   - name: Gilets
     cost: 500
     persoGain: 60
     bought: 0
     physic: 1
+    constraint: 750
   - name: 'Pub '
     cost: 800
     persoGain: 75
     bought: 0
     physic: 0
+    constraint: 800
   - name: "Promo R\xE9seau"
     cost: 1000
     persoGain: 120
     bought: 0
     physic: 0
+    constraint: 800
