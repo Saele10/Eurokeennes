@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -8,6 +9,8 @@ public class PersonneController : MonoBehaviour
 
     private float countdown = 1f;
 
+    [SerializeField] private TextMeshProUGUI _compteur;
+
 
     private void Update()
     {
@@ -15,6 +18,8 @@ public class PersonneController : MonoBehaviour
         {
             AddPersonne(nbPersoSec);
             countdown = 1f;
+            _compteur.text = nbPerso.ToString();
+
         }
         else
             countdown -= Time.deltaTime;

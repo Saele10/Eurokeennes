@@ -111,6 +111,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -259,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Sono sce\u2560\xC7ne_0": -5455663815987865714
+      "Sono sce\u2560\xC7ne_1": 1901470648917688664
+      "Sono sce\u2560\xC7ne_2": -7836382899319874297
+      "Sono sce\u2560\xC7ne_3": -2187448204906263009
+      "Sono sce\u2560\xC7ne_4": 518584886132514657
+      "Sono sce\u2560\xC7ne_5": 9048681395094162596
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

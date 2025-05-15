@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PublicController : MonoBehaviour
@@ -14,6 +15,7 @@ public class PublicController : MonoBehaviour
 
     private SpriteRenderer _sprite;
     public bool bought = false;
+
 
 
     [SerializeField] private Vector2 zoneMin; // Coin inférieur gauche de la zone
