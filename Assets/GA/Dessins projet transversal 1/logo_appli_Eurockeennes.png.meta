@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      logo_appli_Eurockeennes_0: -6110232209742721981
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

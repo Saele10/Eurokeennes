@@ -23,6 +23,7 @@ public class PersonneController : MonoBehaviour
         }
         else
             countdown -= Time.deltaTime;
+
         if (nbPerso < _target)
         {
             float ScoreIncrement = Time.deltaTime * nbPersoSec;
