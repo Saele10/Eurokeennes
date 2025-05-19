@@ -9,12 +9,11 @@ public class MoneyController : MonoBehaviour
 {
     public float _money = 0f;
     public float _moneyPerSecond = 1f;
-
     private float _countdown = 1f;
+    public float _target = 0f;
     
     [SerializeField] private PersonneController _personneController;
     [SerializeField] private TextMeshProUGUI _compteur;
-    public float _target = 0f;
 
 
     private void Update()

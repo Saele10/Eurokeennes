@@ -14,6 +14,7 @@ public class UpgradeController : MonoBehaviour
     [SerializeField] private PersonneController _personneController;
     [SerializeField] private List<PublicController> _publicController = new();
     [SerializeField] private List<GameObject> _visuals = new();
+    [SerializeField] private List<ParticleSystem> _particules;
     [SerializeField] private GameObject _menu;
     [SerializeField] private Button _button;
 
@@ -56,6 +57,11 @@ public class UpgradeController : MonoBehaviour
             _moneyController._target -= data.cost;
             audioSource[0].Play();
             _personneController.nbPerso += data.persoGain;
+            _personneController.nbPersoSec = data.persoSecond;
+            foreach (var particule in _particules)
+            {
+                particule.Play();
+            }
             data.bought = true;
             _spriteRenderer.color = Color.white;
             foreach (var publicController in _publicController)
