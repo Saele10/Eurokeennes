@@ -48,9 +48,9 @@ public class UpgradeController : MonoBehaviour
             Debug.Log("déjà acheté");
 
 
-        else if (_moneyController._money >= data.cost && _personneController.nbPerso >= data.constraint) // si on a assez d'argent...
+        else if (_moneyController._target >= data.cost && _personneController.nbPerso >= data.constraint) // si on a assez d'argent...
         {
-            _moneyController._money -= data.cost;
+            _moneyController._target -= data.cost;
             _personneController.nbPerso += data.persoGain;
             data.bought = true;
             _spriteRenderer.color = Color.white;
