@@ -30,12 +30,11 @@ public class MoneyController : MonoBehaviour
             _compteur.text = Mathf.RoundToInt(_money).ToString();
             
 
-            if (_money > _target)
-            {
-                _money = _target;
-                _compteur.text = _money.ToString();
-            }
-
+        }
+        if (_money > _target)
+        {
+            _money = _target;
+            _compteur.text = _money.ToString();
         }
 
         if (_countdown <= 0)

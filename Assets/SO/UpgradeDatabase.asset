@@ -36,28 +36,28 @@ MonoBehaviour:
     persoGain: 0
     bought: 0
     physic: 1
-    constraint: 250
+    constraint: 175
   - name: "Boucle Magn\xE9tique"
     cost: 500
     persoGain: 50
     bought: 0
     physic: 1
-    constraint: 500
+    constraint: 225
   - name: Gilets
     cost: 500
     persoGain: 60
     bought: 0
     physic: 1
-    constraint: 750
+    constraint: 280
   - name: 'Pub '
     cost: 800
     persoGain: 75
     bought: 0
     physic: 0
-    constraint: 800
+    constraint: 340
   - name: "Promo R\xE9seau"
     cost: 1000
     persoGain: 120
     bought: 0
     physic: 0
-    constraint: 800
+    constraint: 413
