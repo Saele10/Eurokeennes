@@ -26,7 +26,7 @@ MonoBehaviour:
     bought: 0
     physic: 1
     constraint: 0
-    persoSecond: 1
+    persoSecond: 2
   - name: Places accompagnateurs
     cost: 250
     persoGain: 20
