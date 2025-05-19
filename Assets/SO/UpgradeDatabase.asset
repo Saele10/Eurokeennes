@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: UpgradeDatabase
   m_EditorClassIdentifier: 
   data:
-  - name: Rampe
+  - name: "Zone Handicap\xE9"
     cost: 50
     persoGain: 5
     bought: 0
@@ -31,7 +31,7 @@ MonoBehaviour:
     bought: 0
     physic: 1
     constraint: 100
-  - name: Mousse Protect
+  - name: "Barri\xE8re Protect"
     cost: 350
     persoGain: 0
     bought: 0
