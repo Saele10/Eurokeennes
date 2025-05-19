@@ -13,11 +13,24 @@ public class MusicPlaylist : MonoBehaviour
     {
         if (backgroundTracks.Count > 0 && audioSource != null)
         {
+            ShufflePlaylist(); // Mélanger la playlist
             StartCoroutine(PlayPlaylist());
         }
         else
         {
             Debug.LogWarning("Pas de musiques ou pas d'AudioSource assignée !");
+        }
+    }
+
+    // Mélange la liste de musiques
+    void ShufflePlaylist()
+    {
+        for (int i = 0; i < backgroundTracks.Count; i++)
+        {
+            int randomIndex = Random.Range(i, backgroundTracks.Count);
+            AudioClip temp = backgroundTracks[i];
+            backgroundTracks[i] = backgroundTracks[randomIndex];
+            backgroundTracks[randomIndex] = temp;
         }
     }
 
