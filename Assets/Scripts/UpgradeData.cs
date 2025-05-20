@@ -11,5 +11,6 @@ public struct UpgradeData
     public bool bought;
     public bool physic;
     public int constraint;
+    public int persoSecond;
 }
 

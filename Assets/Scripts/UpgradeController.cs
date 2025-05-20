@@ -14,8 +14,12 @@ public class UpgradeController : MonoBehaviour
     [SerializeField] private PersonneController _personneController;
     [SerializeField] private List<PublicController> _publicController = new();
     [SerializeField] private List<GameObject> _visuals = new();
+    [SerializeField] private List<ParticleSystem> _particules;
     [SerializeField] private GameObject _menu;
     [SerializeField] private Button _button;
+
+
+    public List<AudioSource> audioSource;          // L'AudioSource sur --Upgrades-- et --Publics-- //0 good //1 bad
 
     private bool _good = false;
     [SerializeField] private int _id;
@@ -48,10 +52,16 @@ public class UpgradeController : MonoBehaviour
             Debug.Log("déjà acheté");
 
 
-        else if (_moneyController._money >= data.cost && _personneController.nbPerso >= data.constraint) // si on a assez d'argent...
+        else if (_moneyController._target >= data.cost && _personneController.nbPerso >= data.constraint) // si on a assez d'argent...
         {
-            _moneyController._money -= data.cost;
+            _moneyController._target -= data.cost;
+            audioSource[0].Play();
             _personneController.nbPerso += data.persoGain;
+            _personneController.nbPersoSec = data.persoSecond;
+            foreach (var particule in _particules)
+            {
+                particule.Play();
+            }
             data.bought = true;
             _spriteRenderer.color = Color.white;
             foreach (var publicController in _publicController)
@@ -78,6 +88,7 @@ public class UpgradeController : MonoBehaviour
         else
         {
             Debug.Log("pas assez d'argent");
+            audioSource[1].Play();
         }
 
     }
