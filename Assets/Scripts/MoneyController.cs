@@ -2,6 +2,7 @@ using System.Collections;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using static UnityEngine.GraphicsBuffer;
 
@@ -14,6 +15,7 @@ public class MoneyController : MonoBehaviour
     
     [SerializeField] private PersonneController _personneController;
     [SerializeField] private TextMeshProUGUI _compteur;
+    [SerializeField] private Canvas _pause;
 
 
     private void Update()
@@ -49,6 +51,17 @@ public class MoneyController : MonoBehaviour
 
 
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            _pause.gameObject.SetActive(true);
+        }
+
+
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 
     public void AddRand()
@@ -60,6 +73,10 @@ public class MoneyController : MonoBehaviour
     {
         _target += amount;
     }
+
+
+
+
 
 }
 
