@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 4af4c0236e3d4d44ca22b539133d12de
+guid: 2215ec1766b5d1947b922ce0a141e5a3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -931438125895349867
-    second: Boutons_0
-  - first:
-      213: -7873830058495667158
-    second: Boutons_1
+      213: 133120813136234195
+    second: bulle_tuto_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boutons_0
+      name: bulle_tuto_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 88
-        width: 1124
-        height: 619
+        x: 0
+        y: 34
+        width: 512
+        height: 445
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 59980cf95fdd213f0800000000000000
-      internalID: -931438125895349867
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Boutons_1
-      rect:
-        serializedVersion: 2
-        x: 1182
-        y: 565
-        width: 196
-        height: 140
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a24929577498ab290800000000000000
-      internalID: -7873830058495667158
+      spriteID: 3d6423b9ca0f8d100800000000000000
+      internalID: 133120813136234195
       vertices: []
       indices: 
       edges: []
@@ -163,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -172,9 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Boutons_0: -931438125895349867
-      Boutons_1: -7873830058495667158
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

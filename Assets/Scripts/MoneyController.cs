@@ -51,9 +51,13 @@ public class MoneyController : MonoBehaviour
 
     }
 
+    public void AddRand()
+    {
+        AddMoney(Random.Range(0, 21));
+    }
+
     public void AddMoney(float amount)
     {
-        //_money += amount;
         _target += amount;
     }
 
