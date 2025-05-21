@@ -34,17 +34,6 @@ public class UpgradeController : MonoBehaviour
         _spriteRenderer.color = Color.clear;
     }
 
-    private void Update()
-    {
-
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            BuyUpgrade();
-        }
-
-
-
-    }
 
     public void BuyUpgrade()
     {
