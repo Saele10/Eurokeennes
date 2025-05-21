@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -20,7 +19,7 @@ public class UpgradeController : MonoBehaviour
     [SerializeField] private Button _button;
 
 
-    public List<AudioSource> audioSource;          // L'AudioSource sur --Upgrades-- et --Publics-- //0 good //1 bad
+    public List<AudioSource> audioSource;  // L'AudioSource sur --Upgrades-- et --Publics-- //0 good //1 bad
 
     private bool _good = false;
     [SerializeField] private int _id;
