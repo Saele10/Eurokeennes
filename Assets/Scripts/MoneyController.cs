@@ -48,15 +48,6 @@ public class MoneyController : MonoBehaviour
 
         else
             _countdown -= Time.deltaTime;
-
-
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            _pause.gameObject.SetActive(true);
-        }
-
-
     }
 
     public void MainMenu()
