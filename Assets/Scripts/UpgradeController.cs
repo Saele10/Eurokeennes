@@ -74,7 +74,6 @@ public class UpgradeController : MonoBehaviour
                 if (_good == false)
                     break;
             }
-            Debug.Log(_upgradeManager.upgradeBought);
             if (_good)
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
