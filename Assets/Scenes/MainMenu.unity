@@ -701,15 +701,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Play
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 60d6bbeb4fe4a4e428cb5223f3b8afd6, type: 2}
-  m_sharedMaterial: {fileID: 4111152759713036500, guid: 60d6bbeb4fe4a4e428cb5223f3b8afd6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d40cc34bafc4afb49a9aef9128fe14b7, type: 2}
+  m_sharedMaterial: {fileID: -8901311744437788683, guid: d40cc34bafc4afb49a9aef9128fe14b7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4292072403
+  m_fontColor: {r: 0.82641506, g: 0.82641506, b: 0.82641506, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -726,8 +726,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26
-  m_fontSizeBase: 26
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -912,15 +912,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Quit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 60d6bbeb4fe4a4e428cb5223f3b8afd6, type: 2}
-  m_sharedMaterial: {fileID: 4111152759713036500, guid: 60d6bbeb4fe4a4e428cb5223f3b8afd6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d40cc34bafc4afb49a9aef9128fe14b7, type: 2}
+  m_sharedMaterial: {fileID: -8901311744437788683, guid: d40cc34bafc4afb49a9aef9128fe14b7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4292072403
+  m_fontColor: {r: 0.827451, g: 0.827451, b: 0.827451, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -937,8 +937,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26
-  m_fontSizeBase: 26
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
