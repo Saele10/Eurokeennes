@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -65,10 +66,15 @@ public class UpgradeController : MonoBehaviour
             foreach (var bought in _upgradeManager.upgradeBought)
             {
                 if (bought == false)
+                {
                     _good = false;
+                }
                 else
                     _good = true;
+                if (_good == false)
+                    break;
             }
+            Debug.Log(_upgradeManager.upgradeBought);
             if (_good)
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
