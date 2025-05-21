@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -34,17 +35,6 @@ public class UpgradeController : MonoBehaviour
         _spriteRenderer.color = Color.clear;
     }
 
-    private void Update()
-    {
-
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            BuyUpgrade();
-        }
-
-
-
-    }
 
     public void BuyUpgrade()
     {
@@ -76,9 +66,13 @@ public class UpgradeController : MonoBehaviour
             foreach (var bought in _upgradeManager.upgradeBought)
             {
                 if (bought == false)
+                {
                     _good = false;
+                }
                 else
                     _good = true;
+                if (_good == false)
+                    break;
             }
             if (_good)
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
